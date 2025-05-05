@@ -10,28 +10,29 @@ This project predicts **Carbon Monoxide concentration (`CO(GT)`)** for the next 
 
 forecast-48h-air-quality/
 │
-├── data/
-│ ├── raw/ # Original input file (e.g., forecast_48_hours.xls)
-│ └── processed/ # Cleaned data used in modeling
+├── data/                            # Data files
+│   ├── raw/                         # Raw data (e.g., forecast_48_hours.xls)
+│   └── processed/                   # Cleaned or transformed data
 │
-├── notebooks/
-│ ├── 01_data_exploration.ipynb # EDA: visualization, missing values
-│ ├── 02_model_rf_xgb.ipynb # Model training: RandomForest and XGBoost
-│ └── 03_evaluation_residuals.ipynb# Residual ACF + metrics (RMSE/MAE)
+├── notebooks/                       # Jupyter Notebooks
+│   ├── 01_data_exploration.ipynb    # EDA and visualization
+│   ├── 02_model_rf_xgb.ipynb        # Model training (RandomForest & XGBoost)
+│   └── 03_evaluation_residuals.ipynb# Evaluation, ACF analysis, metrics
 │
-├── src/
-│ ├── preprocessing.py # Data cleaning functions
-│ ├── models.py # Training functions for RF/XGB
-│ └── utils.py # Plotting feature importance, ACF
+├── src/                             # Source code
+│   ├── preprocessing.py             # Data cleaning and transformation functions
+│   ├── models.py                    # Model training and saving
+│   └── utils.py                     # Helper functions (e.g., plots)
 │
-├── outputs/
-│ ├── figures/ # Feature importance & ACF plots
-│ └── models/ # Saved model files (.pkl/.joblib)
+├── outputs/                         # Generated outputs
+│   ├── figures/                     # Plots (feature importance, ACF)
+│   └── models/                      # Trained model files (.joblib/.pkl)
 │
-├── README.md # You are here!
-├── requirements.txt # Python dependencies
-├── .gitignore # Ignore unnecessary files
-└── LICENSE # MIT License
+├── README.md                        # Project overview and instructions
+├── requirements.txt                 # Project dependencies
+├── .gitignore                       # Files/folders to ignore in Git
+└── LICENSE                          # License file (e.g., MIT)
+
 
 
 ---
