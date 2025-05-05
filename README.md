@@ -8,32 +8,27 @@ This project predicts **Carbon Monoxide concentration (`CO(GT)`)** for the next 
 
 ## 📁 Repository Structure
 
+```plaintext
 forecast-48h-air-quality/
-│
-├── data/                            # Data files
-│   ├── raw/                         # Raw data (e.g., forecast_48_hours.xls)
-│   └── processed/                   # Cleaned or transformed data
-│
-├── notebooks/                       # Jupyter Notebooks
-│   ├── 01_data_exploration.ipynb    # EDA and visualization
-│   ├── 02_model_rf_xgb.ipynb        # Model training (RandomForest & XGBoost)
-│   └── 03_evaluation_residuals.ipynb# Evaluation, ACF analysis, metrics
-│
-├── src/                             # Source code
-│   ├── preprocessing.py             # Data cleaning and transformation functions
-│   ├── models.py                    # Model training and saving
-│   └── utils.py                     # Helper functions (e.g., plots)
-│
-├── outputs/                         # Generated outputs
-│   ├── figures/                     # Plots (feature importance, ACF)
-│   └── models/                      # Trained model files (.joblib/.pkl)
-│
-├── README.md                        # Project overview and instructions
-├── requirements.txt                 # Project dependencies
-├── .gitignore                       # Files/folders to ignore in Git
-└── LICENSE                          # License file (e.g., MIT)
-
-
+├── data/                     # Data files
+│   ├── raw/                 # Raw data (e.g., forecast_48_hours.xls)
+│   └── processed/           # Cleaned or transformed data
+├── notebooks/               # Jupyter Notebooks
+│   ├── 01_data_exploration.ipynb      # EDA and visualization
+│   ├── 02_model_rf_xgb.ipynb          # Model training (RandomForest & XGBoost)
+│   └── 03_evaluation_residuals.ipynb  # Evaluation, ACF analysis, metrics
+├── src/                     # Source code
+│   ├── preprocessing.py     # Data cleaning and transformation functions
+│   ├── models.py            # Model training and saving
+│   └── utils.py             # Helper functions (e.g., plots)
+├── outputs/                 # Generated outputs
+│   ├── figures/             # Plots (feature importance, ACF)
+│   └── models/              # Trained model files (.joblib/.pkl)
+├── README.md                # Project overview and instructions
+├── requirements.txt         # Project dependencies
+├── .gitignore               # Files/folders to ignore in Git
+└── LICENSE                  # License file (e.g., MIT)
+```
 
 ---
 
